@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+/* ============ */
+/* == Header == */
+/* ============ */
+  header, footer {
+    background-color: #548CA8;
+    min-height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1, footer p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+/* ============ */
+/* === Body === */
+/* ============ */
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(215,223,252,1) 0%, rgba(255,255,255,1) 0%, rgba(215,223,252,1) 84% );
+  }
+
+  main {
+    margin: 2em 0;
+  }
+
+  /* Form */
+  .formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .formContainer ::placeholder {
+    color: rgba(66, 66, 66, 0.23);
+  }
+
+  .formLabel, .formInput {
+    padding-left: 5px;
+  }
+
+  .btn-primary {
+    background-color: #548CA8;
+    border-color: #497e9b;
+  }
+
+  .btn-primary:hover {
+    background-color: #497e9b;
+    border-color: #497e9b;
+  }
+
+/* ============ */
+/* == Footer == */
+/* ============ */
+  footer {
+    margin-top: auto;
+  }
