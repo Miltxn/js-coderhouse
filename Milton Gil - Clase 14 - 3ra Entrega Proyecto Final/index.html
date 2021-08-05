@@ -68,17 +68,6 @@
                   required
                 /><br />
               </div>
-              <div class="col">
-                <label class="formLabel">Fecha de compra</label><br />
-                <input
-                  type="date"
-                  class="formInput form-control"
-                  placeholder="Fecha de compra:"
-                  name="fechaCompra"
-                  id="formFechaCompra"
-                  required
-                /><br />
-              </div>
             </div>
 
             <hr />
@@ -107,7 +96,7 @@
               </div>
               <div class="col">
                 <label class="formLabel">Cuotas</label><br />
-                <select
+                <!-- <select
                   class="formInput form-control"
                   placeholder="Cantidad de cuotas:"
                   name="cuotas"
@@ -118,15 +107,15 @@
                   <option value="9">9 Cuotas</option>
                   <option value="12">12 Cuotas</option>
                   <option value="18">18 Cuotas</option></select
-                ><br />
-                <!-- <input
+                ><br /> -->
+                <input
                   type="number"
                   class="formInput form-control"
                   placeholder="Cantidad de cuotas:"
                   name="cuotas"
                   id="formCuotas"
                   required
-                /> -->
+                />
               </div>
             </div>
 
@@ -136,7 +125,6 @@
               class="formSubmit btn btn-primary"
               value="Cargar Gasto"
             />
-
             <button id="mostrarGastos" class="formSubmit btn btn-secondary">
               Mostrar gastos
             </button>
@@ -149,16 +137,18 @@
       <div class="container" id="gastosIngresados">
         <div class="card">
           <table id="tablaGastos" style="width: 100%">
-            <tr>
-              <th>Medio de Pago</th>
-              <th>Tienda</th>
-              <th>Categoría</th>
-              <th>Fecha</th>
-              <th>Producto</th>
-              <th>Costo</th>
-              <th>Cuotas</th>
-              <th>Valor Cuota</th>
-            </tr>
+            <thead>
+              <tr>
+                <th>Medio de Pago</th>
+                <th>Tienda</th>
+                <th>Categoría</th>
+                <th>Producto</th>
+                <th>Costo</th>
+                <th>Cuotas</th>
+                <th>Valor Cuota</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
           </table>
         </div>
       </div>
